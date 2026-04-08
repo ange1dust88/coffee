@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cabin_Condensed, Calistoga } from "next/font/google";
 import "./globals.css";
 import Header from "./components/ui/header";
+import PromoBar from "./components/ui/promo-bar";
 
 const calistoga = Calistoga({
   weight: "400",
