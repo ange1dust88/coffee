@@ -3,7 +3,7 @@ import Marquee from "../ui/marquee";
 
 function Hero() {
   return (
-    <section className="md:h-[130vh]  h-screen ">
+    <section className="md:h-[130vh] h-screen ">
       <div className="bg-hero h-full flex flex-col justify-start items-center pt-48 overflow-hidden relative">
         <h1 className="calistoga text-center text-primary text-6xl md:text-8xl text-balance lg:leading-26">
           Life Begins <br />

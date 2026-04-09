@@ -2,7 +2,7 @@ import React from "react";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "dark";
   className?: string;
 };
 
@@ -19,6 +19,7 @@ function Button({
       "bg-primary text-hero border border-primary hover:bg-transparent hover:text-primary",
     secondary:
       "border border-primary text-primary hover:bg-primary hover:text-hero",
+    dark: "border bg-hero border-hero text-background hover:bg-transparent hover:text-hero",
   };
 
   return (
