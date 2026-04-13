@@ -5,7 +5,7 @@ function MenuPreview() {
   return (
     <section className="bg-background border-b border-secondary py-20 md:py-32">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 md:gap-20 justify-center items-center px-4">
-        <Title>
+        <Title className="text-center text-hero">
           Find and Get <br />
           What You Love
         </Title>

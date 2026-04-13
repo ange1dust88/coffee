@@ -7,7 +7,7 @@ function MenuSnippet() {
     <section className="bg-background-alt border-b border-secondary py-20 md:py-32">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 md:gap-20 justify-center items-center">
         <div className="flex flex-col gap-4 justify-center items-center">
-          <Title>Loved by Locals</Title>
+          <Title className="text-center text-hero">Loved by Locals</Title>
           <p className="text-hero text-lg">
             Locals go-to's everyone loves - handpicked always fresh
           </p>
