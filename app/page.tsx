@@ -5,7 +5,6 @@ import MenuSnippet from "./components/sections/MenuSnippet";
 import Nearby from "./components/sections/Nearby";
 import OrderOnline from "./components/sections/OrderOnline";
 import Reviews from "./components/sections/Reviews";
-import Footer from "./components/ui/footer";
 
 export default function Home() {
   return (
@@ -14,10 +13,9 @@ export default function Home() {
       <MenuPreview />
       <MenuSnippet />
       <AboutUs1 />
-      <Reviews />
-      <Nearby />
+      <Reviews isTitle={true} />
+      <Nearby isTitle={true} />
       <OrderOnline />
-      <Footer />
     </div>
   );
 }

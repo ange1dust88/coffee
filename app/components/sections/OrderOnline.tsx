@@ -3,7 +3,7 @@ import Title from "../ui/title";
 
 function OrderOnline() {
   return (
-    <section className="bg-background  py-20 md:py-32">
+    <section className="bg-background-alt  py-20 md:py-32 border-t border-secondary">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center px-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

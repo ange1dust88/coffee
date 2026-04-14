@@ -3,6 +3,7 @@ import { Cabin_Condensed, Calistoga } from "next/font/google";
 import "./globals.css";
 import Header from "./components/ui/header";
 import PromoBar from "./components/ui/promo-bar";
+import Footer from "./components/ui/footer";
 
 const calistoga = Calistoga({
   weight: "400",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

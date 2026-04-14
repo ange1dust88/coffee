@@ -5,8 +5,16 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import PromoBar from "./promo-bar";
 
-const linksLeft = ["Menu", "Locations"];
-const linksRight = ["About Us", "News"];
+const linksLeft = [
+  { label: "Menu", href: "/menu" },
+  { label: "Locations", href: "/locations" },
+];
+
+const linksRight = [
+  { label: "About Us", href: "/about-us" },
+  { label: "Reviews", href: "/reviews" },
+];
+
 const allLinks = [...linksLeft, ...linksRight];
 
 function Header() {
@@ -51,12 +59,13 @@ function Header() {
           <nav className="hidden md:block">
             <ul className="flex gap-6 font-medium">
               {linksLeft.map((item) => (
-                <li
-                  key={item}
+                <Link
+                  href={item.href}
+                  key={item.label}
                   className="cursor-pointer rounded-full px-2 py-1 transition duration-200 text-primary hover:bg-primary hover:text-hero"
                 >
-                  {item}
-                </li>
+                  {item.label}
+                </Link>
               ))}
             </ul>
           </nav>
@@ -89,12 +98,13 @@ function Header() {
           <nav className="hidden md:block">
             <ul className="flex gap-6 font-medium">
               {linksRight.map((item) => (
-                <li
-                  key={item}
+                <Link
+                  href={item.href}
+                  key={item.label}
                   className="cursor-pointer rounded-full px-2 py-1 transition duration-200 text-primary hover:bg-primary hover:text-hero"
                 >
-                  {item}
-                </li>
+                  {item.label}
+                </Link>
               ))}
             </ul>
           </nav>
@@ -134,15 +144,16 @@ function Header() {
       >
         <div className="w-full max-w-lg bg-hero rounded-2xl p-6 flex flex-col items-center gap-3">
           {allLinks.map((item, i) => (
-            <button
-              key={item}
+            <Link
+              href={item.href}
+              key={item.label}
               onClick={() => setMenuOpen(false)}
               className={`w-full text-center rounded-full cursor-pointer px-4 py-2 text-primary text-lg transition-all duration-200 hover:bg-primary hover:text-hero
           ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               style={{ transitionDelay: `${i * 60}ms` }}
             >
-              {item}
-            </button>
+              {item.label}
+            </Link>
           ))}
         </div>
       </nav>

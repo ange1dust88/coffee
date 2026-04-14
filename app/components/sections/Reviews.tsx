@@ -1,14 +1,23 @@
+import Link from "next/link";
 import Button from "../ui/button";
 import Title from "../ui/title";
 
-function Reviews() {
+interface Props {
+  isTitle: boolean;
+}
+
+function Reviews({ isTitle = true }: Props) {
   return (
     <section className="bg-background  py-20 md:py-32">
       <div className="max-w-7xl mx-auto flex flex-col gap-12 md:gap-20 items-center px-4">
-        <Title className="text-center text-hero">
-          What People <br />
-          Love About Us
-        </Title>
+        {isTitle ? (
+          <Title className="text-center text-hero">
+            What People <br />
+            Love About Us
+          </Title>
+        ) : (
+          <></>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-stretch">
           {/* Card 1 */}
@@ -94,7 +103,14 @@ function Reviews() {
             />
           </div>
         </div>
-        <Button variant="dark">Our Locations</Button>
+        {isTitle ? (
+          <Button variant="dark">
+            {" "}
+            <Link href="/locations">Our Locations</Link>
+          </Button>
+        ) : (
+          <></>
+        )}
       </div>
     </section>
   );

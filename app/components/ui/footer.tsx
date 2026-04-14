@@ -8,7 +8,7 @@ function Footer() {
     <div className="min-h-[75vh] bg-hero flex flex-col justify-between">
       <Marquee />
 
-      <footer className="py-16 md:py-24 px-4 md:px-6">
+      <footer className="pt-8 md:pt-16 pb-4 md:pb-0  px-4 md:px-6">
         <div className="max-w-7xl mx-auto flex flex-col gap-16">
           {/* MAIN CONTENT */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -39,13 +39,13 @@ function Footer() {
                 </span>
               </Link>
 
-              <h5 className="text-background text-xl calistoga">
+              <h5 className="text-primary text-xl calistoga">
                 Life Begins <br /> After Coffee
               </h5>
 
               <a
                 href="mailto:hello@focusbrew.com"
-                className="flex text-background gap-2 items-center hover:text-background/80 transition"
+                className="flex text-primary gap-2 items-center hover:text-primary/80 transition"
               >
                 <span className="text-base calistoga break-all">
                   hello@focusbrew.com
@@ -54,14 +54,14 @@ function Footer() {
 
               <a
                 href="tel:+48987654321"
-                className="flex text-background gap-2 items-center hover:text-background/80 transition"
+                className="flex text-primary gap-2 items-center hover:text-primary/80 transition"
               >
                 <span className="text-base calistoga">+48 987 654 321</span>
               </a>
             </div>
 
             {/* NAVIGATION */}
-            <div className="flex flex-col text-background">
+            <div className="flex flex-col text-primary">
               <h4 className="text-sm mb-4">Main</h4>
               <nav className="flex flex-col gap-2">
                 <Link href="" className="calistoga">
@@ -80,7 +80,7 @@ function Footer() {
             </div>
 
             {/* CATEGORIES */}
-            <div className="flex flex-col text-background">
+            <div className="flex flex-col text-primary">
               <h4 className="text-sm mb-4">Categories</h4>
               <nav className="flex flex-col gap-2">
                 <Link href="" className="calistoga">
@@ -96,14 +96,14 @@ function Footer() {
             </div>
 
             {/* SOCIAL */}
-            <div className="flex flex-col text-background">
+            <div className="flex flex-col text-primary">
               <h4 className="text-sm mb-4">Follow Us</h4>
 
               <div className="flex gap-3">
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
-                  className="bg-background p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
+                  className="bg-primary p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ function Footer() {
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  className="bg-background p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
+                  className="bg-primary p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ function Footer() {
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  className="bg-background p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
+                  className="bg-primary p-2 rounded-[50%] transition-all duration-300 hover:opacity-80"
                 >
                   <svg
                     xmlns="https://x.com/"
@@ -149,7 +149,7 @@ function Footer() {
           </div>
 
           {/* BIG TEXT */}
-          <h3 className="text-background w-full  lg:text-left text-[13vw] leading-none calistoga">
+          <h3 className="text-primary w-full lg:text-left text-[13vw] leading-none calistoga">
             Focusbrew
           </h3>
         </div>

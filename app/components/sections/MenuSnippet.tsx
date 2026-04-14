@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../ui/button";
 import MenuItem from "../ui/menu-item";
 import Title from "../ui/title";
@@ -28,7 +29,10 @@ function MenuSnippet() {
           <MenuItem img={"/menu/raf.jpeg"} title={"Raf"} price={20} />
         </div>
 
-        <Button variant="dark">Explore Menu</Button>
+        <Button variant="dark">
+          {" "}
+          <Link href="/menu">Explore Menu</Link>
+        </Button>
       </div>
     </section>
   );
