@@ -20,7 +20,6 @@ function Reviews({ isTitle = true }: Props) {
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-stretch">
-          {/* Card 1 */}
           <div className="flex flex-col gap-6 h-full">
             <div className="rounded-3xl bg-background-alt p-6 border border-secondary flex-1 flex flex-col">
               <svg
@@ -48,7 +47,6 @@ function Reviews({ isTitle = true }: Props) {
             />
           </div>
 
-          {/* Card 2 */}
           <div className="flex flex-col gap-6 h-full">
             <img
               src="about-us/img2.webp"
@@ -76,7 +74,6 @@ function Reviews({ isTitle = true }: Props) {
             </div>
           </div>
 
-          {/* Card 3 */}
           <div className="flex flex-col gap-6 h-full">
             <div className="rounded-3xl bg-background-alt p-6 border border-secondary flex-1 flex flex-col">
               <svg

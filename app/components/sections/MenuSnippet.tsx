@@ -15,18 +15,34 @@ function MenuSnippet() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:px-0 px-6">
-          <MenuItem img={"/menu/latte.jpeg"} title={"Latte"} price={15} />
+          <MenuItem
+            key="latte"
+            img={"/menu/latte.jpeg"}
+            title={"Latte"}
+            price={15}
+            slug={"latte"}
+          />
           <MenuItem
             img={"/menu/cappuccino.webp"}
             title={"Cappuccino"}
             price={17}
+            slug={"cappuccino"}
+            key={"cappuccino"}
           />
           <MenuItem
             img={"/menu/americano.jpg"}
             title={"Americano"}
             price={12}
+            slug={"americano"}
+            key={"americano"}
           />
-          <MenuItem img={"/menu/raf.jpeg"} title={"Raf"} price={20} />
+          <MenuItem
+            img={"/menu/raf.jpeg"}
+            title={"Raf"}
+            price={20}
+            slug={"raf"}
+            key={"raf"}
+          />
         </div>
 
         <Button variant="dark">

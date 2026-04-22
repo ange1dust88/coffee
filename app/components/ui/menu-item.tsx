@@ -4,11 +4,12 @@ interface Props {
   img: string;
   title: string;
   price: number;
+  slug: string;
 }
 
-function MenuItem({ img, title, price }: Props) {
+function MenuItem({ img, title, price, slug }: Props) {
   return (
-    <Link href="/" className="group flex flex-col w-full ">
+    <Link href={`/menu/${slug}`} className="group flex flex-col w-full">
       <div className="aspect-square w-full overflow-hidden rounded-3xl">
         <img
           src={img}
