@@ -1,14 +1,14 @@
 import Link from "next/link";
-
 interface Props {
   img: string;
   title: string;
+  href: string;
 }
 
-function MenuPreviewItem({ img, title }: Props) {
+function MenuPreviewItem({ img, title, href }: Props) {
   return (
     <Link
-      href="/"
+      href={href}
       className="flex flex-row md:flex-col items-center gap-4 md:gap-6 group"
     >
       <div className="h-[clamp(150px,22vw,280px)] w-[clamp(150px,22vw,280px)] rounded-full overflow-hidden">

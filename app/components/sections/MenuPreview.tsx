@@ -11,9 +11,21 @@ function MenuPreview() {
         </Title>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-10 md:gap-16">
-          <MenuPreviewItem img="coffee.jpg" title="Coffee" />
-          <MenuPreviewItem img="cold.jpg" title="Cold Drinks" />
-          <MenuPreviewItem img="desserts.jpg" title="Desserts" />
+          <MenuPreviewItem
+            img="/menu/flat-white.webp"
+            title="Coffee"
+            href="/menu#coffee"
+          />
+          <MenuPreviewItem
+            img="/menu/matcha-iced-latte.jpg"
+            title="Cold Drinks"
+            href="/menu#cold-drinks"
+          />
+          <MenuPreviewItem
+            img="/menu/chocolate-cake.jpg"
+            title="Desserts"
+            href="/menu#desserts"
+          />
         </div>
       </div>
     </section>
