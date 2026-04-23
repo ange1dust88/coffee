@@ -3,8 +3,8 @@ import Link from "next/link";
 import SmallHero from "../components/sections/SmallHero";
 import Button from "../components/ui/button";
 import HeroTitle from "../components/ui/hero-title";
-
-import MenuSnippet from "../components/sections/MenuSnippet";
+import FullMenu from "../components/sections/FullMenu";
+import OrderOnline from "../components/sections/OrderOnline";
 
 function MenuPage() {
   return (
@@ -23,7 +23,8 @@ function MenuPage() {
           </Button>
         </div>
       </SmallHero>
-      <MenuSnippet />
+      <FullMenu />
+      <OrderOnline />
     </div>
   );
 }
